@@ -1,6 +1,6 @@
 # Curso Desenvolvedor Full-Stack 
 
-![Senac Bauru](https://www.sp.senac.br/o/senac-theme/images/logo_senac_default.png)
+![Senac Bauru](https://cdn-sites-images.46graus.com/files/photos/069c0485/d05492b5-6574-47d0-904f-f37e0aed62fd/logo-senac-256x256.png)
 
 ## Descrição do Curso
 
