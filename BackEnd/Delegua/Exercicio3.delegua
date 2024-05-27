@@ -1,0 +1,23 @@
+// 3-) Escreva um programa que pergunte quantas notas de:
+// - 2 reais
+// - 5 reais
+// - 10 reais
+// - 20 reais
+// - 50 reais
+// - 100 reais
+// - 200 reais
+// E depois calcule qual o valor total do montante.
+
+
+var notasDe2 = real(leia("Digite a quantidade de notas de 2 reais: "))
+var notasDe5 = real(leia("Digite a quantidade de notas de 5 reais: "))
+var notasDe10 = real(leia("Digite a quantidade de notas de 10 reais: "))
+var notasDe20 = real(leia("Digite a quantidade de notas de 20 reais: "))
+var notasDe50 = real(leia("Digite a quantidade de notas de 50 reais: "))
+var notasDe100 = real(leia("Digite a quantidade de notas de 100 reais: "))
+var notasDe200 = real(leia("Digite a quantidade de notas de 200 reais: "))
+var total = (notasDe2 * 2) + (notasDe5 * 5) + (notasDe10 * 10) +
+              (notasDe20 * 20) + (notasDe50 * 50) + (notasDe100 * 100) +
+              (notasDe200 * 200)
+
+escreva("O valor total do montante é: R$ " + total)

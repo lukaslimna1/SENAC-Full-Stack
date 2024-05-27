@@ -1,0 +1,7 @@
+// 9-) Elaborar um programa que apresente o valor da conversão em real (R$) de um valor
+// lido em dólar (US$). O programa deve solicitar o valor da cotação do dólar.
+
+var dolares = real(leia("Digite o Valor em Dolares (US$)"))
+var cotacaoDolar = real (5.14)
+var valorReal = dolares * cotacaoDolar
+escreva("O valor convertido em reais é: R$ " + valorReal)

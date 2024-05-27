@@ -1,0 +1,7 @@
+// 1-) Escreva um programa que pergunte o raio de um círculo, imprima sua área
+
+
+var raio = real(leia("Informe o valor do Raio: "))
+var pi = 3.14159
+var area = (raio * raio) * pi
+escreva("O valor da Área é: " + area)

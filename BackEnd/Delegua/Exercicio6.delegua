@@ -1,0 +1,19 @@
+// Faça um programa que calcule o IMC da pessoa
+
+var altura = real(leia("Qual a sua altura? (em metros) "))
+var peso = real(leia("Qual o seu peso? (em quilogramas) "))
+var imc = peso / (altura * altura)
+
+se imc <= 18.5 entao {
+    escreva("Você está abaixo do peso normal.")
+} senao se imc > 18.5 e imc <= 24.9 entao {
+    escreva("Você está com o peso normal.")
+} senao se imc > 24.9 e imc <= 29.9 entao {
+    escreva("Você está com sobrepeso.")
+} senao se imc > 29.9 e imc <= 34.9 entao {
+    escreva("Você está com obesidade grau I.")
+} senao se imc > 34.9 e imc <= 39.9 entao {
+    escreva("Você está com obesidade grau II.")
+} senao {
+    escreva("Você está com obesidade grau III ou mórbida.")
+}

@@ -1,0 +1,9 @@
+// Construir um programa que leia um valor numérico inteiro e apresente como resultado os seus valores: sucessor e antecessor.
+
+var numero = inteiro(leia("Informe um numero: "))
+
+var antecessor = numero - 1
+var sucessor = numero + 1
+
+escreva("O antecessor de " + numero + " é: " + antecessor)
+escreva("O sucessor de " + numero + " é: " + sucessor)

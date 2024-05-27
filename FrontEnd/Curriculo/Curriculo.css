@@ -1,123 +1,188 @@
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
-}
-
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.container:hover {
-    transform: scale(1.02);
-}
-
-.cabecalho {
-    text-align: center;
-    margin-bottom: 20px;
-    border: 3px solid #4CAF50;
-    background: linear-gradient(to right, #a8e063, #56ab2f);
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.cabecalho h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-.cabecalho p {
-    margin: 5px 0;
-}
-
-.cabecalho a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.profissional, .academica, .cursos, .habilidades {
-    margin-bottom: 20px;
-    border: 3px solid #2196F3;
-    background: linear-gradient(to right, #2196F3, #6dd5ed);
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.profissional h2, .academica h2, .cursos h2, .habilidades h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    font-weight: bold;
+    background-color: #f0f0f0;
     color: #333;
 }
 
-.experiencia, .educacao, .curso {
-    margin-bottom: 10px;
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
 }
 
-.experiencia h3, .educacao h3, .curso h3 {
+nav {
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
-    font-weight: bold;
+    text-align: center;
 }
 
-.experiencia p, .educacao p, .curso p {
-    margin: 5px 0;
+nav ul li {
+    margin: 0 15px;
+    display: inline-block;
 }
 
-.lista-habilidades {
-    list-style: none;
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+
+section {
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    border-bottom: 2px solid #2196F3; /* Azul intenso */
+    padding-bottom: 10px;
+    color: #2196F3; /* Azul intenso */
+    transition: color 0.3s;
+}
+
+h2:hover {
+    color: #4CAF50; /* Verde intenso */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #e2e2e2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.lista-habilidades li {
-    background: #333;
-    color: #fff;
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
-    font-weight: bold; 
-    transition: background 0.3s;
+ul li {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.lista-habilidades li:hover {
-    background: #555;
+.lista-cursos li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.rodape {
+.lista-cursos li span {
+    display: block;
     text-align: center;
-    margin-top: 20px;
-    border: 3px solid #9C27B0;
-    background: linear-gradient(to right, #e1bee7, #ba68c8);
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.rodape p {
+.lista-cursos .titulo-curso {
     font-weight: bold;
 }
 
-.rodape a {
-    color: #fff;
-    text-decoration: none;
+.lista-cursos .instituicao {
+    font-style: italic;
+    color: #777;
 }
 
-.rodape a:hover {
-    text-decoration: underline;
+.lista-cursos .situacao {
+    color: #4CAF50;
+}
+
+/* Estilo para a tabela de habilidades */
+.grid-habilidades {
+    width: 100%;
+}
+
+.grid-habilidades td {
+    vertical-align: top;
+    padding: 20px;
+    transition: background-color 0.3s; /* Adiciona transição suave de cor ao passar o mouse */
+}
+
+/* Estilo para as células da tabela */
+.grid-habilidades ul li {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Fundo branco */
+    transition: background-color 0.3s; /* Adiciona transição suave de cor ao passar o mouse */
+}
+
+/* Cores de fundo diferentes para cada célula */
+.grid-habilidades td:nth-child(1) ul li:nth-child(odd) {
+    background-color: #e6f7ff; /* Cor de fundo azul claro para habilidades de design */
+}
+
+.grid-habilidades td:nth-child(2) ul li:nth-child(odd) {
+    background-color: #e0f2f1; /* Cor de fundo verde claro para habilidades de programação */
+}
+
+.grid-habilidades td:nth-child(3) ul li:nth-child(odd) {
+    background-color: #e6f7ff; /* Cor de fundo azul claro para outras habilidades */
+}
+
+/* Efeito ao passar o mouse sobre as células da tabela */
+.grid-habilidades td ul li:hover {
+    background-color: #4CAF50; /* Altera a cor de fundo ao passar o mouse para verde intenso */
+    color: #636262; /* Altera a cor do texto para branco ao passar o mouse */
+}
+
+/* Estilo para o título "Outras Habilidades" */
+.grid-habilidades h3 {
+    border-bottom: 2px solid #2196F3; /* Linha inferior azul intenso */
+    padding-bottom: 10px;
+    color: #2196F3; /* Texto azul intenso */
+    transition: color 0.3s; /* Adiciona transição suave de cor ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o título "Outras Habilidades" */
+.grid-habilidades h3:hover {
+    color: #4CAF50; /* Altera a cor do texto para verde intenso ao passar o mouse */
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Verde intenso */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2);
 }

@@ -1,0 +1,24 @@
+// Monte uma calculadora:
+// 1- Primeiro deve ser perguntado o valor 1 e o valor 2
+// 2- Depois deve ser exibido um menu com as operações (multiplicação, divisão, subtração e adição)
+// 3- Não deve sair do menu até que seja selecionada uma opção válida
+// 4- Exibir o resultado com a operação escolhida
+
+var valor1 = real(leia("Informe o primeiro valor: "))
+var valor2 = real(leia("Informe o segundo valor: "))
+var operacao = leia("Informe a operacao desejada, sendo elas '+' '-' '*' '/' ")
+
+escolha operacao {
+    caso "+":
+        var resultado = valor1 + valor2
+        escreva("O resultado da adição é: " + resultado)
+    caso "-":
+        var resultado = valor1 - valor2
+        escreva("O resultado da subtração é: " + resultado)
+    caso "*":
+        var resultado = valor1 * valor2
+        escreva("O resultado da multiplicação é: " + resultado)
+    caso "/":
+        var resultado = valor1 / valor2
+        escreva("O resultado da divisão é: " + resultado)
+}    

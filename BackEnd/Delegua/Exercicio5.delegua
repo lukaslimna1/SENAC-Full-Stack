@@ -1,0 +1,12 @@
+// A empresa Sirius paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra. Faça um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado
+// funcionário. Considere que o salário líquido é igual ao salário bruto descontando-se 10% de
+// impostos.
+
+var horasNormais = real(leia("Informe o número de horas normais trabalhadas: "))
+var horasExtras = real(leia("Informe o número de horas extras trabalhadas: "))
+
+var salarioBruto = (horasNormais * 10) + (horasExtras * 15)
+var salarioLiquido = salarioBruto - (salarioBruto * 0.10)
+
+escreva("O salário bruto é: R$" + salarioBruto)
+escreva("O salário líquido é: R$" + salarioLiquido)
