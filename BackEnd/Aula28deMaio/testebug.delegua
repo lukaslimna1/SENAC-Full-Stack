@@ -1,0 +1,14 @@
+var n1=0;
+var n2=0;
+var n1 = leia("Digite a nota 1 ")
+var n2 = leia("Digite a nota 2 ")
+
+var media = (n1+n2)/2
+
+se (media >= 7){
+    escreva("Sua media foi " + media + " Parabens, você foi Aprovado! ");
+} senao se (media >= 5 e media < 7) {
+    escreva("Sua media foi " + media + " Você esta de Recuperação! ");
+} senao {
+    escreva("Sua media foi " + media + " Você esta Reprovado! ");
+}
