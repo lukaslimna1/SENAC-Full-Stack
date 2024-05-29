@@ -6,7 +6,7 @@
 
 var valor1 = real(leia("Informe o primeiro valor: "))
 var valor2 = real(leia("Informe o segundo valor: "))
-var operacao = leia("Informe a operacao desejada, sendo elas '+' '-' '*' '/' ")
+var operacao =leia("Informe a operacao desejada, sendo elas '+' '-' '*' '/' ")
 
 escolha operacao {
     caso "+":
