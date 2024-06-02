@@ -1,0 +1,45 @@
+// Faça um algoritmo que receba a altura e peso de todos os alunos de uma sala de aula de 15
+// alunos, depois disso faça o seguinte:
+// - Mostre o peso médio
+// - Mostre a altura média
+// - Mostre o aluno mais alto (pelo índice mesmo)
+
+
+// Definindo vetores vazios para armazenar as alturas e pesos dos alunos
+var alturas = [];
+var pesos = [];
+
+// Loop para coletar informações de altura e peso de cada aluno
+para (var i = 0; i < 15; i = i + 1) {
+    var altura = real(leia("Digite a altura do aluno " + (i + 1) + " (em metros): "));
+    var peso = real(leia("Digite o peso do aluno " + (i + 1) + " (em kg): "));
+    alturas[i] = altura;
+    pesos[i] = peso;
+}
+
+// Calculando o peso médio
+var pesoTotal = 0;
+para (var i = 0; i < tamanho(pesos); i = i + 1) {
+    pesoTotal = pesoTotal + pesos[i];
+}
+var pesoMedio = pesoTotal / tamanho(pesos);
+
+// Calculando a altura média
+var alturaTotal = 0;
+para (var i = 0; i < tamanho(alturas); i = i + 1) {
+    alturaTotal = alturaTotal + alturas[i];
+}
+var alturaMedia = alturaTotal / tamanho(alturas);
+
+// Encontrando o índice do aluno mais alto
+var indiceAlunoMaisAlto = 0;
+para (var i = 1; i < tamanho(alturas); i = i + 1) {
+    se (alturas[i] > alturas[indiceAlunoMaisAlto]) {
+        indiceAlunoMaisAlto = i;
+    }
+}
+
+// Exibindo os resultados
+escreva("Peso médio dos alunos: " + pesoMedio + " kg");
+escreva("Altura média dos alunos: " + alturaMedia + " metros");
+escreva("O aluno mais alto é o aluno " + (indiceAlunoMaisAlto + 1));

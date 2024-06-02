@@ -1,0 +1,19 @@
+// Faça um algoritmo de soma, onde o usuário pode informar quantos números ele quiser,
+// assim que terminar de informar os números, deve ser exibida a soma desses números
+
+// Variável para armazenar a soma dos números
+var soma = 0;
+
+// Variável para controle de laço
+var continuar = "sim";
+
+// Loop para ler números até que o usuário decida parar
+enquanto (continuar == "sim") {
+    var valor = leia("Digite um número: ");
+    soma = soma + real(valor);  // Converte a entrada para número e adiciona à soma
+    
+    continuar = leia("Você quer continuar? (sim/nao): ");
+}
+
+// Exibe a soma dos números
+escreva("A soma dos números informados é: " + soma);

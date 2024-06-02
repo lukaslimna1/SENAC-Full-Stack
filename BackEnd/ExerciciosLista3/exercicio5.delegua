@@ -1,0 +1,30 @@
+// Receba 20 valores e depois informe se existem números repetidos.
+
+// Definindo um vetor vazio para armazenar os números
+var vetor = [];
+
+// Loop para ler 20 números
+para (var i = 0; i < 20; i = i + 1) {
+    var valor = leia("Digite o valor " + (i + 1) + ": ");
+    vetor[i] = inteiro(valor);  // Converte a entrada para número e armazena no vetor
+}
+
+// Variável para armazenar se há números repetidos
+var numerosRepetidos = falso;
+
+// Loop para verificar se há números repetidos
+para (var i = 0; i < 20 i = i + 1) {
+    para (var j = i + 1; j < 20; j = j + 1) {
+        se (vetor[i] == vetor[j]) {
+            numerosRepetidos = verdadeiro;
+            pausa; // Se encontrarmos um número repetido, não precisamos continuar verificando
+        }
+    }
+}
+
+// Verifica se há números repetidos e exibe o resultado
+se (numerosRepetidos) {
+    escreva("Existem números repetidos.");
+} senao {
+    escreva("Não existem números repetidos.");
+}

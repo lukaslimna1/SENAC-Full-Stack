@@ -1,0 +1,30 @@
+// Faça um algoritmo que receba 20 numeros, coloque num vetor, e depois imprima os
+// números em ordem decrescente
+
+// Definindo um vetor vazio para armazenar os números
+var vetor = [];
+
+// Loop para ler 20 números
+para (var i = 0; i < 20; i = i + 1) {
+    var valor = leia("Digite o valor " + (i + 1) + ": ");
+    vetor[i] = inteiro(valor);  // Converte a entrada para número e armazena no vetor
+    escreva("Valor lido e armazenado na posição " + i + ": " + valor);
+}
+
+// Ordena o vetor em ordem crescente
+vetor = ordenar(vetor);
+
+// Função para inverter a ordem do vetor
+var inverterVetor = funcao(vetor) {
+    var vetorInvertido = [];
+    para (var i = tamanho(vetor) - 1; i >= 0; i = i - 1) {
+        vetorInvertido[i] = vetor[tamanho(vetor) - 1 - i];
+    }
+    retorna vetorInvertido;
+};
+
+// Inverte a ordem do vetor
+vetor = inverterVetor(vetor);
+
+// Exibe o vetor invertido
+escreva("Vetor invertido: " + vetor);
