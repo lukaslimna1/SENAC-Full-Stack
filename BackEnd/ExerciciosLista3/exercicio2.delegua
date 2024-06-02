@@ -1,0 +1,17 @@
+// 2-) Faça um algoritmo que leia 10 números desordenados, ordene e depois exiba o resultado ordenado para o usuário
+
+// Definindo um vetor vazio para armazenar os números
+var vetor = [];
+
+// Loop para ler 10 números
+para (var i = 0; i < 10; i = i + 1) {
+    var valor = leia("Digite o valor " + (i + 1) + ": ");
+    vetor[i] = inteiro(valor);  // Converte a entrada para número e armazena no vetor
+    escreva("Valor lido e armazenado na posição " + i + ": " + valor);
+}
+
+// Ordena o vetor usando a função de ordenação padrão
+vetor = ordenar(vetor);
+
+// Exibe o vetor ordenado
+escreva("Vetor ordenado: " + vetor);

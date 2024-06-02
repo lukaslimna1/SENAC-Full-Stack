@@ -1,0 +1,33 @@
+// 1-) Fazer um algoritmo que leia 20 valores numéricos inteiros e armazene-os em um vetor.
+// Após, verifique – dentre estes valores - se existem valores iguais a 10. Se existirem, escrever as
+// posições em que estes valores estão armazenados .
+
+
+// Definindo um vetor vazio para armazenar os números
+var vetor = [];
+
+// Loop para ler 20 números
+para (var i = 0; i < 5; i = i + 1) {
+    var valor = leia("Digite o valor " + (i + 1) + ": ");
+    vetor[i] = inteiro(valor);  // Converte a entrada para número e armazena no vetor
+    escreva("Valor lido e armazenado na posição " + i + ": " + valor);
+}
+
+// Variável para armazenar as posições onde o valor é igual a 10
+var posicoes = [];
+
+// Loop para verificar os valores no vetor
+var indicePosicoes = 0;
+para (var i = 0; i < 5; i = i + 1) {
+    se (vetor[i] == 10) {
+        posicoes[indicePosicoes] = i; // Adiciona a posição ao vetor de posições
+        indicePosicoes = indicePosicoes + 1;
+    }
+}
+
+// Verifica se há alguma posição armazenada
+se posicoes > 0 {
+    escreva("O valor 10 está armazenado nas posições: " + posicoes);
+} senao {
+    escreva("Não existem valores iguais a 10 no vetor.");
+}
