@@ -1,0 +1,17 @@
+// Definindo um vetor vazio para armazenar os resultados das jogadas
+var resultados = [];
+
+// Pergunta ao usuário quantas vezes ele quer jogar o dado
+var numeroDeJogadas = inteiro(leia("Quantas vezes você quer jogar o dado D20? "));
+
+// Loop para realizar as jogadas
+para (var i = 0; i < numeroDeJogadas; i = i + 1) {
+    var resultado = aleatorioEntre(1, 21); // Gera um número aleatório entre 1 e 20
+    resultados[i] = resultado; // Armazena o resultado no vetor
+}
+
+// Exibindo os resultados das jogadas
+escreva("Resultados das jogadas:");
+para (var i = 0; i < tamanho(resultados); i = i + 1) {
+    escreva("Jogada " + (i + 1) + ": " + resultados[i]);
+}
