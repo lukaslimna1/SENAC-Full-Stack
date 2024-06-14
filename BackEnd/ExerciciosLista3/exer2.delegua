@@ -1,0 +1,12 @@
+var vetor = []
+
+para (var i = 0; i < 10; i = i + 1) {
+    escreva(i);
+}
+
+var aux = 0
+var troca = 0
+
+para (var j = 0; j < 5; j = j + 1) {
+    escreva(i);
+}
