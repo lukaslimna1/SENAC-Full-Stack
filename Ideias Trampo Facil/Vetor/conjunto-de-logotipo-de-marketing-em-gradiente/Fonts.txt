@@ -1,0 +1,5 @@
+Fonts used in this design:
+
+Font: Barlow
+Author: Jeremy Tribby
+Url: https://fonts.google.com/specimen/Barlow
