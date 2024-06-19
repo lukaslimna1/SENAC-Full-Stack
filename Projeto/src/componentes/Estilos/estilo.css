@@ -1,0 +1,53 @@
+/* Estilos para o cabeçalho comum */
+.cabecalho-comum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: white; /* Cor do texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para a logo */
+  .logo img {
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+  }
+  
+  /* Estilos para os links de navegação */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white; /* Cor do texto dos links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave da cor do texto */
+  }
+  
+  .nav-links a:hover {
+    color: #fd7e14; /* Laranja ao passar o mouse */
+  }
+  
+  /* Estilos para o ícone de login/cadastro */
+  .icon-user {
+    width: 40px; /* Tamanho do ícone */
+    height: 40px; /* Tamanho do ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease; /* Transição suave da cor do ícone */
+  }
+  
+  .icon-user .icon:hover {
+    color: #fd7e14; /* Laranja ao passar o mouse */
+  }
+  
+  .icon-user .icon {
+    width: 70%; /* Tamanho do ícone */
+    height: auto;
+    color: white; /* Cor do ícone */
+  }
+  
