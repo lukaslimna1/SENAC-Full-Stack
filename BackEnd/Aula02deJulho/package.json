@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "moment": "^2.30.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "projetostream",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "EntradaSaida.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaoparella/POO_Fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoparella/POO_Fullstack/issues"
+  },
+  "homepage": "https://github.com/joaoparella/POO_Fullstack#readme",
+  "description": ""
+}
