@@ -1,5 +1,7 @@
+/*Componentes*/
 import Cabecalho from "../componentes/cabecalho"
 import Quadrado from "../componentes/quadrado"
+/*CSS */
 import '../estilos/estilo.css'
 
 function Home() {

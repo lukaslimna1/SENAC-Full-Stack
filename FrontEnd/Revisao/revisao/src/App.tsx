@@ -1,15 +1,19 @@
-import './estilos/estilo.css';
+/*React*/
+import {Routes, Route} from 'react-router-dom'
+/*Paginas*/
 import Home from './pagina/home';
 import QuemSomos from './pagina/quemsomos';
-import {Routes, Route} from 'react-router-dom'
 
+/*CSS*/
+import './estilos/estilo.css';
 
 function App() {
   return (
     <div>
-      <Route>
-      <QuemSomos />
-      </Route>
+      <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/quemsomos' element={<QuemSomos/>} />
+      </Routes>
     </div>
   );
 }

@@ -1,4 +1,7 @@
+/*Componentes*/
 import Cabecalho from "../componentes/cabecalho"
+/*CSS*/
+
 
 function QuemSomos() {
     return (
