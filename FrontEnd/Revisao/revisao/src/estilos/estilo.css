@@ -34,3 +34,33 @@
     height: 150px;
     background-color: brown;
 }
+
+.qs_container {
+    align-items: center;
+}
+
+.professor{
+    background-color: aqua;
+    width: 80%;
+    height: 90px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.professor:hover, 
+.alunos:hover {
+    background-color: rgb(131,130,189);
+}
+
+.alunos{
+    background-color: aqua;
+    width: 80%;
+    height: 90px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
