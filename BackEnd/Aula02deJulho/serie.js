@@ -1,18 +1,17 @@
-import Filme from "./filme.js"; // Importando a classe Filme
+import filme from './filme.js';
 
-export default class Serie extends Filme {
-  constructor(nome, duracao, sinopse, ano, nomeSerie, episodio, temporada) {
-    super(nome, duracao, sinopse, ano);
-    this.nomeSerie = nomeSerie;
-    this.episodio = episodio;
-    this.temporada = temporada;
-  }
+export	class Serie extends filme {
+    constructor(nome, nomeSerie, duracao, sinopse, ano, episodio, temporada){
+        super(nome, duracao, sinopse, ano)
 
-  assistir() {
-    return `Assistindo à série ${this.nomeSerie}, temporada ${this.temporada}, episódio ${this.episodio}. Tempo restante -> ${this.duracao} minutos`;
-  }
+        this.nomeSerie = nomeSerie
+        this.episodio = episodio
+        this.temporada = temporada
+    }
 
-  compartilhar() {
-    return `Estou assistindo à série ${this.nomeSerie}, temporada ${this.temporada}. Sinopse: ${this.sinopse}. Foi lançada em ${this.ano}.`;
-  }
+   
+    compartilhar(){
+        return `Estou assistindo o episodio ${this.episodio} da temporada ${this.temporada} da serie ${this.nomeSerie} que conta com a seguinte historia ${this.sinopse} foi lançado no ano ${this.ano}`
+    }
+    
 }
